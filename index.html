@@ -117,54 +117,54 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-
     </select>
     <select id="typeFilter">
       <option value="all">All Types</option>
-<option value="Hotel">Hotel (142)</option>
+<option value="Hotel">Hotel (138)</option>
 <option value="Restaurant / Bar / Cafe / Bakery">Restaurant / Bar / Cafe / Bakery (58)</option>
 <option value="Gift Shop">Gift Shop (47)</option>
 <option value="CMA Client">CMA Client (32)</option>
 <option value="Pet Retail">Pet Retail (20)</option>
-<option value="Brewery">Brewery (13)</option>
+<option value="General Retail">General Retail (15)</option>
 <option value="Winery">Winery (13)</option>
+<option value="Brewery">Brewery (12)</option>
 <option value="Faire Client">Faire Client (12)</option>
 <option value="Boutique">Boutique (11)</option>
-<option value="General Retail">General Retail (10)</option>
 <option value="Hardware">Hardware (5)</option>
 <option value="Campground">Campground (4)</option>
 <option value="Flower / Garden Shop">Flower / Garden Shop (4)</option>
 <option value="Distillery">Distillery (3)</option>
 <option value="Farm">Farm (3)</option>
 <option value="Museum">Museum (3)</option>
-<option value="Airport Gift Shop">Airport Gift Shop (2)</option>
 <option value="Clothing Store">Clothing Store (2)</option>
+<option value="Airport Gift Shop">Airport Gift Shop (2)</option>
 <option value="Grocery Store">Grocery Store (2)</option>
-<option value="Antique Store">Antique Store (1)</option>
 <option value="Pharmacy">Pharmacy (1)</option>
+<option value="Antique Store">Antique Store (1)</option>
     </select>
     <input type="text" id="searchInput" placeholder="Search clients..." />
   </div>
 </div>
 <div class="legend">
   <h3>Client Types</h3>
-  <div class="legend-item" data-type="Hotel"><span class="legend-dot" style="background:#3498DB">🏨</span>Hotel (142)</div>
+  <div class="legend-item" data-type="Hotel"><span class="legend-dot" style="background:#3498DB">🏨</span>Hotel (138)</div>
   <div class="legend-item" data-type="Restaurant / Bar / Cafe / Bakery"><span class="legend-dot" style="background:#E74C3C">🍽️</span>Restaurant / Bar / Cafe / Bakery (58)</div>
   <div class="legend-item" data-type="Gift Shop"><span class="legend-dot" style="background:#9B59B6">🎁</span>Gift Shop (47)</div>
   <div class="legend-item" data-type="CMA Client"><span class="legend-dot" style="background:#F39C12">📦</span>CMA Client (32)</div>
   <div class="legend-item" data-type="Pet Retail"><span class="legend-dot" style="background:#1ABC9C">🐾</span>Pet Retail (20)</div>
-  <div class="legend-item" data-type="Brewery"><span class="legend-dot" style="background:#D35400">🍺</span>Brewery (13)</div>
+  <div class="legend-item" data-type="General Retail"><span class="legend-dot" style="background:#2ECC71">🏪</span>General Retail (15)</div>
   <div class="legend-item" data-type="Winery"><span class="legend-dot" style="background:#8E44AD">🍷</span>Winery (13)</div>
+  <div class="legend-item" data-type="Brewery"><span class="legend-dot" style="background:#D35400">🍺</span>Brewery (12)</div>
   <div class="legend-item" data-type="Faire Client"><span class="legend-dot" style="background:#00BCD4">🛍️</span>Faire Client (12)</div>
   <div class="legend-item" data-type="Boutique"><span class="legend-dot" style="background:#E91E63">👜</span>Boutique (11)</div>
-  <div class="legend-item" data-type="General Retail"><span class="legend-dot" style="background:#2ECC71">🏪</span>General Retail (10)</div>
   <div class="legend-item" data-type="Hardware"><span class="legend-dot" style="background:#607D8B">🔧</span>Hardware (5)</div>
   <div class="legend-item" data-type="Campground"><span class="legend-dot" style="background:#388E3C">⛺</span>Campground (4)</div>
   <div class="legend-item" data-type="Flower / Garden Shop"><span class="legend-dot" style="background:#66BB6A">🌸</span>Flower / Garden Shop (4)</div>
   <div class="legend-item" data-type="Distillery"><span class="legend-dot" style="background:#795548">🥃</span>Distillery (3)</div>
   <div class="legend-item" data-type="Farm"><span class="legend-dot" style="background:#4CAF50">🌾</span>Farm (3)</div>
   <div class="legend-item" data-type="Museum"><span class="legend-dot" style="background:#FF9800">🏛️</span>Museum (3)</div>
-  <div class="legend-item" data-type="Airport Gift Shop"><span class="legend-dot" style="background:#5C6BC0">✈️</span>Airport Gift Shop (2)</div>
   <div class="legend-item" data-type="Clothing Store"><span class="legend-dot" style="background:#E91E63">👕</span>Clothing Store (2)</div>
+  <div class="legend-item" data-type="Airport Gift Shop"><span class="legend-dot" style="background:#5C6BC0">✈️</span>Airport Gift Shop (2)</div>
   <div class="legend-item" data-type="Grocery Store"><span class="legend-dot" style="background:#43A047">🛒</span>Grocery Store (2)</div>
-  <div class="legend-item" data-type="Antique Store"><span class="legend-dot" style="background:#8D6E63">🏺</span>Antique Store (1)</div>
   <div class="legend-item" data-type="Pharmacy"><span class="legend-dot" style="background:#F44336">💊</span>Pharmacy (1)</div>
+  <div class="legend-item" data-type="Antique Store"><span class="legend-dot" style="background:#8D6E63">🏺</span>Antique Store (1)</div>
 
 </div>
 <div id="map"></div>
@@ -172,10 +172,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
 const markers = [
-  {name:"Delaware North - Grant Grove Village Gift Shop",clientName:"Delaware North - National Parks",address:"Grant Grove Village, Kings Canyon National Park, CA",lat:36.746,lon:-118.966,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats",state:"Multiple",revenue:64562.079999999994},
-  {name:"Delaware North - Lodgepole Market & Gift",clientName:"Delaware North - National Parks",address:"Lodgepole Village, Sequoia National Park, CA",lat:36.5925,lon:-118.7347,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats",state:"Multiple",revenue:64562.079999999994},
-  {name:"Delaware North - Yellowstone General Store",clientName:"Delaware North - National Parks",address:"Old Faithful, Yellowstone National Park, WY",lat:44.428,lon:-110.5885,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats",state:"Multiple",revenue:64562.079999999994},
-  {name:"Delaware North - Tenaya Lodge Gift Shop",clientName:"Delaware North - National Parks",address:"1122 CA-41, Fish Camp, CA (Tenaya Lodge, Yosemite)",lat:37.4939,lon:-119.652,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats",state:"Multiple",revenue:64562.079999999994},
+  {name:"Delaware North - Grant Grove Village Gift Shop",clientName:"Delaware North - National Parks",address:"Grant Grove Village, Kings Canyon National Park, CA",lat:36.746,lon:-118.966,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Multiple",revenue:64562.079999999994},
+  {name:"Delaware North - Lodgepole Market & Gift",clientName:"Delaware North - National Parks",address:"Lodgepole Village, Sequoia National Park, CA",lat:36.5925,lon:-118.7347,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Multiple",revenue:64562.079999999994},
+  {name:"Delaware North - Yellowstone General Store",clientName:"Delaware North - National Parks",address:"Old Faithful, Yellowstone National Park, WY",lat:44.428,lon:-110.5885,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Multiple",revenue:64562.079999999994},
+  {name:"Delaware North - Tenaya Lodge Gift Shop",clientName:"Delaware North - National Parks",address:"1122 CA-41, Fish Camp, CA (Tenaya Lodge, Yosemite)",lat:37.4939,lon:-119.652,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Multiple",revenue:64562.079999999994},
   {name:"Vigilante Coffee",clientName:"Vigilante Coffee",address:"4327 Gallatin St, Hyattsville, MD 20781, USA",lat:38.952376,lon:-76.94112899999999,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery"],products:"Custom Dog Treats, Bulk Dog Treats, Custom Dog Treats, Bulk Dog Treats, Bulk Dog Treats, Custom Dog Treats, Bulk Dog Treats, Bulk Dog Treats, Custom Dog Treats, Bulk Dog Treats, Bulk Dog Treats, Custom Dog Treats, Bulk Dog Treats, Custom Dog Treats, Bulk Dog Treats, Bulk Dog Treats, Bulk Dog Treats, Custom Dog Treats",state:"Maryland",revenue:10542.48},
   {name:"JuiceLand",clientName:"Juiceland",address:"8225 Hwy 6 unit 500, Missouri City, TX 77459, USA",lat:29.543573300000002,lon:-95.54644329999999,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Texas",revenue:35951.1},
   {name:"JuiceLand",clientName:"Juiceland",address:"1625 Barton Springs Rd, Austin, TX 78704, USA",lat:30.2624725,lon:-97.7626015,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Texas",revenue:35951.1},
@@ -243,7 +243,7 @@ const markers = [
   {name:"JW Marriott San Antonio Hill Country Resort & Spa",clientName:"JW Marriott San Antonio Hill Country",address:"23808 Resort Pkwy, San Antonio, TX 78261, USA",lat:29.6663753,lon:-98.4008875,type:"Hotel",allTypes:["Hotel"],products:"Trail Mix, M&Ms, Half-Popped Popcorn, Trail Mix, Half-Popped Popcorn, Custom Dog Treats",state:"Texas",revenue:2671.7999999999997},
   {name:"Claws",clientName:"Claws Maine",address:"743 Main St, Rockland, ME 04841, USA",lat:44.111764900000004,lon:-69.10663439999999,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Maine",revenue:4989.7},
   {name:"Hotel Monteleone",clientName:"Hotel Monteleone",address:"214 Royal St, New Orleans, LA 70130, USA",lat:29.954221999999998,lon:-90.0677562,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Louisiana",revenue:2997.13},
-  {name:"Chautauqua Resort & Conference Center",clientName:"Chautauqua Resort and Conference Center",address:"304 14th St NW, Long Beach, WA 98631, USA",lat:46.361600599999996,lon:-124.0581644,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats",state:"Washington",revenue:2282.7},
+  {name:"Chautauqua Resort & Conference Center",clientName:"Chautauqua Resort and Conference Center",address:"304 14th St NW, Long Beach, WA 98631, USA",lat:46.361600599999996,lon:-124.0581644,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats",state:"Washington",revenue:0},
   {name:"The Starling Atlanta Midtown, Curio Collection by Hilton",clientName:"The Starling Atlanta Midtown",address:"188 14th St NE, Atlanta, GA 30361, USA",lat:33.7869773,lon:-84.3813921,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Dog Water Bowl, Poop Bag Dispenser, Dog Bandana, Tote Bag",state:"Georgia",revenue:11881.9},
   {name:"Florida Cracker Trading Company",clientName:"Florida Cracker Trading Company",address:"924 E Jefferson St STE A, Brooksville, FL 34601, USA",lat:28.5522097,lon:-82.3817428,type:"Boutique",allTypes:["Boutique"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Florida",revenue:2608.3999999999996},
   {name:"A Gust of Sun Winery & Vineyard",clientName:"A Gust of Sun Winery",address:"4515 Baer Rd, Ransomville, NY 14131, USA",lat:43.1942121,lon:-78.8549665,type:"Winery",allTypes:["Winery"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"New York",revenue:2351.8},
@@ -265,7 +265,7 @@ const markers = [
   {name:"Four Seasons Hotel Philadelphia at Comcast Center",clientName:"Four Seasons Philadelphia",address:"One N 19th St, Philadelphia, PA 19103, USA",lat:39.955014,lon:-75.17095610000001,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Pennsylvania",revenue:3991.2000000000003},
   {name:"Kimpton Hotel Monaco Pittsburgh",clientName:"Kimpton Monaco Pittsburgh",address:"620 William Penn Pl, Pittsburgh, PA 15219, USA",lat:40.4414152,lon:-79.9963274,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Pennsylvania",revenue:3062.9},
   {name:"Four Seasons Hotel Washington, DC",clientName:"Four Seasons DC",address:"2800 Pennsylvania Ave NW, Washington, DC 20007, USA",lat:38.9048185,lon:-77.0572948,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Washington D.C.",revenue:2705.3},
-  {name:"Four Seasons Hotel And Residences Fort Lauderdale",clientName:"Four Seasons Fort Lauderdale",address:"525 N Fort Lauderdale Beach Blvd, Fort Lauderdale, FL 33304, USA",lat:26.1301594,lon:-80.10441809999999,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats",state:"Florida",revenue:5218.9},
+  {name:"Four Seasons Hotel And Residences Fort Lauderdale",clientName:"Four Seasons Fort Lauderdale",address:"525 N Fort Lauderdale Beach Blvd, Fort Lauderdale, FL 33304, USA",lat:26.1301594,lon:-80.10441809999999,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats",state:"Florida",revenue:0},
   {name:"Four Seasons Hotel Westlake Village, California",clientName:"Four Seasons Westlake Village",address:"2 Dole Dr, Westlake Village, CA 91362, USA",lat:34.1515768,lon:-118.80458879999999,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"California",revenue:2148},
   {name:"Manchester Grand Hyatt San Diego",clientName:"Manchester Grand Hyatt San Diego",address:"1 Market Pl, San Diego, CA 92101, USA",lat:32.7101883,lon:-117.16832740000001,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"California",revenue:2662.7},
   {name:"Hard Rock Hotel and Casino Sacramento",clientName:"Hard Rock Hotel Sacramento",address:"3317 Forty Mile Rd, Wheatland, CA 95692, USA",lat:39.0507367,lon:-121.5126703,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"California",revenue:3150.2},
@@ -289,12 +289,12 @@ const markers = [
   {name:"Lola\'s Cafe",clientName:"Lola\'s Cafe",address:"1101 Corporate Dr a1, Ladera Ranch, CA 92694, USA",lat:33.55579,lon:-117.62927499999999,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery"],products:"Custom Dog Treats, Custom Dog Treats",state:"California",revenue:1458.4},
   {name:"Domaine Madeleine Hotel",clientName:"Domaine Madeleine Hotel",address:"146 Wildflower Ln, Port Angeles, WA 98362, USA",lat:48.1153968,lon:-123.2701249,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats",state:"Washington",revenue:1259.1},
   {name:"El Coqui Bakery Sanford",clientName:"El Coqui Bakery",address:"512 Sanford Ave, Sanford, FL 32771, USA",lat:28.807719799999997,lon:-81.2650609,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery"],products:"Custom Dog Treats, Custom Dog Treats",state:"Florida",revenue:2038.4},
-  {name:"Irvine Marriott",clientName:"Irvine Marriott",address:"18000 Von Karman Ave, Irvine, CA 92612, USA",lat:33.6783214,lon:-117.84974119999998,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats",state:"California",revenue:1518.8},
+  {name:"Irvine Marriott",clientName:"Irvine Marriott",address:"18000 Von Karman Ave, Irvine, CA 92612, USA",lat:33.6783214,lon:-117.84974119999998,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats",state:"California",revenue:0},
   {name:"JW Marriott Essex House New York",clientName:"JW Marriott Essex House New York",address:"160 Central Park S, New York, NY 10019, USA",lat:40.7662802,lon:-73.9785674,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats, Dog Water Bowl, Poop Bag Dispenser",state:"New York",revenue:3267.4},
   {name:"Sheraton LaGuardia East Hotel",clientName:"Sheraton LaGuardia East",address:"135-20 39th Ave, Flushing, NY 11354, USA",lat:40.759726,lon:-73.83167710000001,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats",state:"New York",revenue:2040.9},
   {name:"The St. Regis Chicago",clientName:"St. Regis Chicago",address:"401 E Wacker Dr, Chicago, IL 60601, USA",lat:41.887557199999996,lon:-87.61764029999999,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats",state:"Illinois",revenue:1852.28},
   {name:"La Valencia Hotel",clientName:"La Valencia Hotel",address:"1132 Prospect St, La Jolla, CA 92037, USA",lat:32.848638099999995,lon:-117.2736945,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats",state:"California",revenue:3095.73},
-  {name:"North Fork Brewery",clientName:"North Fork Brewery",address:"6186 Mt Baker Hwy, Deming, WA 98244, USA",lat:48.8905989,lon:-122.1513607,type:"Brewery",allTypes:["Brewery"],products:"Custom Dog Treats",state:"Washington",revenue:1470.9},
+  {name:"North Fork Brewery",clientName:"North Fork Brewery",address:"6186 Mt Baker Hwy, Deming, WA 98244, USA",lat:48.8905989,lon:-122.1513607,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats",state:"Washington",revenue:0},
   {name:"The Yard McKinney TX",clientName:"The Yard",address:"107 S Church St, McKinney, TX 75069, USA",lat:33.1963957,lon:-96.61715900000002,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Texas",revenue:3299.2},
   {name:"Sheraton Baltimore North Hotel",clientName:"Sheraton Baltimore North",address:"903 Dulaney Valley Rd, Towson, MD 21204, USA",lat:39.406182099999995,lon:-76.5997964,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats",state:"Maryland",revenue:1840.4},
   {name:"The Ritz-Carlton Key Biscayne, Miami",clientName:"Ritz Carlton Key Biscayne",address:"455 Grand Bay Drive, Key Biscayne, Miami, FL 33149, USA",lat:25.6915779,lon:-80.1579217,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats",state:"Florida",revenue:1226.8},
@@ -329,7 +329,7 @@ const markers = [
   {name:"The Meteor Cafe",clientName:"The Meteor Cafe",address:"401 SE D St, Bentonville, AR 72712, USA",lat:36.36784,lon:-94.20403639999999,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery"],products:"Custom Dog Treats, Custom Dog Treats",state:"Arkansas",revenue:2223.3},
   {name:"Lansdowne Resort",clientName:"Lansdowne Resort",address:"44050 Woodridge Pkwy, Leesburg, VA 20176, USA",lat:39.0835139,lon:-77.475775,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Virginia",revenue:2512.7},
   {name:"Kimpton Hotel Monaco Denver",clientName:"Kimpton Monaco Denver",address:"1717 Champa St, Denver, CO 80202, USA",lat:39.7478609,lon:-104.9926254,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats",state:"Colorado",revenue:1858.96},
-  {name:"Hilton Miami Airport Blue Lagoon",clientName:"Hilton Miami Airport",address:"5101 Waterford District Dr, Miami, FL 33126, USA",lat:25.7819729,lon:-80.2786043,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats",state:"Florida",revenue:1626.4},
+  {name:"Hilton Miami Airport Blue Lagoon",clientName:"Hilton Miami Airport",address:"5101 Waterford District Dr, Miami, FL 33126, USA",lat:25.7819729,lon:-80.2786043,type:"General Retail",allTypes:["General Retail"],products:"Custom Dog Treats",state:"Florida",revenue:0},
   {name:"The Westin Dallas Downtown",clientName:"Westin Dallas Downtown",address:"1201 Main Street, Driveway Entrance at, 1220 Elm St, Dallas, TX 75202, USA",lat:32.7804192,lon:-96.80180329999999,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats",state:"Texas",revenue:2184.4900000000002},
   {name:"Willamette Valley Vineyards",clientName:"Willamette Valley Vineyards",address:"8800 Enchanted Way SE, Turner, OR 97392, USA",lat:44.827781699999996,lon:-123.01235510000001,type:"Winery",allTypes:["Winery"],products:"Custom Dog Treats, Custom Dog Treats",state:"Oregon",revenue:1861.8},
   {name:"The Westin Monache Resort, Mammoth",clientName:"Westin Mammoth",address:"50 Hillside Dr, Mammoth Lakes, CA 93546, USA",lat:37.649229399999996,lon:-118.98631870000001,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Butter Toffee Mixed Nuts, Popcorn",state:"California",revenue:3100.5},
@@ -419,7 +419,7 @@ const markers = [
   {name:"Colisco Wearables",clientName:"Colisco",address:"416 E Main St, Frisco, CO 80443, USA",lat:39.575792299999996,lon:-106.0965932,type:"Clothing Store",allTypes:["Clothing Store"],products:"Destination Dog Treats",state:"Colorado",revenue:162},
   {name:"Iron Creek Leather & Gifts",clientName:"Iron Creek Leather",address:"126 Winter St, Keystone, SD 57751, USA",lat:43.892688299999996,lon:-103.4256577,type:"Clothing Store",allTypes:["Clothing Store", "General Retail"],products:"Destination Dog Treats",state:"South Dakota",revenue:161.28},
   {name:"Jellystone Park™ Estes Park",clientName:"YYH Estes Park",address:"5495 US-36, Estes Park, CO 80517, USA",lat:40.340676699999996,lon:-105.4300552,type:"Gift Shop",allTypes:["Gift Shop"],products:"Destination Dog Treats",state:"Colorado",revenue:288},
-  {name:"Sky Market",clientName:"Sky Market (Denver Airport)",address:"8500 Peña Blvd, Denver, CO 80249, USA",lat:39.8632418,lon:-104.674048,type:"Airport Gift Shop",allTypes:["Airport Gift Shop"],products:"Destination Dog Treats, Destination Dog Treats, Destination Dog Treats",state:"Colorado",revenue:1800.9599999999998},
+  {name:"Sky Market",clientName:"Sky Market (Denver Airport) / JAF Concessions",address:"8500 Peña Blvd, Denver, CO 80249, USA",lat:39.8632418,lon:-104.674048,type:"Airport Gift Shop",allTypes:["Airport Gift Shop"],products:"Destination Dog Treats, Destination Dog Treats, Destination Dog Treats",state:"Colorado",revenue:1800.9599999999998},
   {name:"Rocky Mountain Gateway",clientName:"Rocky Mountain Gateway",address:"3450 Fall River Rd, Estes Park, CO 80517, USA",lat:40.4017494,lon:-105.58695759999999,type:"Gift Shop",allTypes:["Gift Shop"],products:"Destination Dog Treats",state:"Colorado",revenue:288},
   {name:"Sugar Mill Antiques and Vintage Depot",clientName:"Sugar Mill",address:"13788 Pacific Cir, Longmont, CO 80504, USA",lat:40.2027803,lon:-104.97717379999999,type:"Antique Store",allTypes:["Antique Store"],products:"Destination Dog Treats",state:"Colorado",revenue:288},
   {name:"South Park",clientName:"South Park City Museum",address:"350 5th St, Fairplay, CO 80440, USA",lat:39.224671,lon:-106.004149,type:"Museum",allTypes:["Museum"],products:"Destination Dog Treats",state:"Colorado",revenue:161.28},
@@ -484,8 +484,8 @@ const markers = [
   {name:"Tom\'s Farms",clientName:"Tom\'s Farms",address:"23900 Temescal Canyon Rd, Temescal Valley, CA 92883, USA",lat:33.772918,lon:-117.48673099999999,type:"Flower / Garden Shop",allTypes:["Flower / Garden Shop", "CMA Client"],products:"Custom Dog Treats",state:"California",revenue:921.2},
   {name:"Hi-Desert Tails",clientName:"Hi-Desert Tails",address:"57560 29 Palms Hwy, Yucca Valley, CA 92284, USA",lat:34.1262688,lon:-116.40911179999999,type:"Pet Retail",allTypes:["Pet Retail", "CMA Client"],products:"Destination Dog Treats",state:"California",revenue:161.28},
   {name:"Sugar B\'s Boutique",clientName:"Sugar B\'s Boutique",address:"147 N Main St B, Gunnison, CO 81230, USA",lat:38.5453329,lon:-106.927317,type:"Boutique",allTypes:["Boutique", "CMA Client"],products:"Destination Dog Treats",state:"Colorado",revenue:161.28},
-  {name:"Belle Shain Kennels & Farm",clientName:"",address:"12668 River Creek Dr, Fairhope, AL 36532, USA",lat:30.475165599999997,lon:-87.80725199999999,type:"Pet Retail",allTypes:["Pet Retail"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Alabama",revenue:11651.9},
-  {name:"Aspen Kitchens",clientName:"",address:"5020 N Nevada Ave Ste 150, Colorado Springs, CO 80918, USA",lat:38.903516499999995,lon:-104.82165870000001,type:"General Retail",allTypes:["General Retail", "CMA Client"],products:"Destination Dog Treats",state:"Colorado",revenue:241.92},
+  {name:"Belle Shain Kennels & Farm",clientName:"Belle Shain Kennels & Farm",address:"12668 River Creek Dr, Fairhope, AL 36532, USA",lat:30.475165599999997,lon:-87.80725199999999,type:"Pet Retail",allTypes:["Pet Retail"],products:"Custom Dog Treats, Custom Dog Treats, Custom Dog Treats",state:"Alabama",revenue:11651.9},
+  {name:"Aspen Kitchens",clientName:"Aspen Kitchens",address:"5020 N Nevada Ave Ste 150, Colorado Springs, CO 80918, USA",lat:38.903516499999995,lon:-104.82165870000001,type:"General Retail",allTypes:["General Retail", "CMA Client"],products:"Destination Dog Treats",state:"Colorado",revenue:241.92},
   {name:"Hotel Kabuki - JDV by Hyatt",clientName:"Hotel Kabuki",address:"1625 Post St, San Francisco, CA 94115, USA",lat:37.7855773,lon:-122.42893889999999,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats",state:"California",revenue:1447.8000000000002},
   {name:"Skull Creek Boathouse",clientName:"Skull Creek Boathouse",address:"397 Squire Pope Rd, Hilton Head Island, SC 29926, USA",lat:32.2363967,lon:-80.7473449,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery"],products:"Custom Dog Treats, Custom Dog Treats",state:"South Carolina",revenue:2092.7},
   {name:"DC Oakes Brewhouse And Eatery",clientName:"DC Oakes Brewhouse & Eatery",address:"3581 E Harmony Rd #110, Fort Collins, CO 80528, USA",lat:40.522698999999996,lon:-105.01173039999999,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery"],products:"Custom Dog Treats",state:"Colorado",revenue:780.9},
@@ -533,19 +533,19 @@ const markers = [
   {name:"Ramah Home",clientName:"Ramah Home",address:"5642 Olde Wadsworth Blvd, Arvada, CO 80002, USA",lat:39.799748799999996,lon:-105.0813299,type:"Gift Shop",allTypes:["Gift Shop", "CMA Client"],products:"Destination Dog Treats",state:"Colorado",revenue:161.28},
   {name:"Grand Superior Lodge",clientName:"Grand Superior Lodge",address:"2826 MN-61, Two Harbors, MN 55616, USA",lat:47.119462399999996,lon:-91.50425039999999,type:"Hotel",allTypes:["Hotel"],products:"Bulk Dog Treats",state:"Minnesota",revenue:236},
   {name:"Bigfoot Print and Copy",clientName:"Bigfoot Print and Copy",address:"103 Redwood Hwy A, Cave Junction, OR 97523, USA",lat:42.1675143,lon:-123.6458478,type:"Gift Shop",allTypes:["Gift Shop"],products:"Destination Dog Treats",state:"Oregon",revenue:161.28},
-  {name:"Off the Beaten Path Bookstore and Café",clientName:"",address:"68 9th St, Steamboat Springs, CO 80487, USA",lat:40.486373,lon:-106.835808,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery", "CMA Client"],products:"Destination Dog Treats",state:"Colorado",revenue:161.28},
-  {name:"Dandelion Home + Gift",clientName:"",address:"6501 E Greenway Pkwy Suite 157, Scottsdale, AZ 85254, USA",lat:33.6240758,lon:-111.9416296,type:"Boutique",allTypes:["Boutique", "CMA Client"],products:"Destination Dog Treats",state:"Arizona",revenue:161.28},
-  {name:"Smoky Mountain Sasquatch",clientName:"",address:"7138 E Lamar Alexander Pkwy, Townsend, TN 37882, USA",lat:35.678255799999995,lon:-83.782127,type:"Gift Shop",allTypes:["Gift Shop"],products:"Thematic Dog Treats",state:"Tennessee",revenue:330.15},
-  {name:"Ruby Jane Boutique - Denver Highlands",clientName:"",address:"3616 W 32nd Ave, Denver, CO 80211, USA",lat:39.7619518,lon:-105.035084,type:"Boutique",allTypes:["Boutique", "CMA Client"],products:"Destination Dog Treats",state:"Colorado",revenue:252.72},
+  {name:"Off the Beaten Path Bookstore and Café",clientName:"Off the Beaten Path Bookstore and Café",address:"68 9th St, Steamboat Springs, CO 80487, USA",lat:40.486373,lon:-106.835808,type:"Restaurant / Bar / Cafe / Bakery",allTypes:["Restaurant / Bar / Cafe / Bakery", "CMA Client"],products:"Destination Dog Treats",state:"Colorado",revenue:161.28},
+  {name:"Dandelion Home + Gift",clientName:"Dandelion Home + Gift",address:"6501 E Greenway Pkwy Suite 157, Scottsdale, AZ 85254, USA",lat:33.6240758,lon:-111.9416296,type:"Boutique",allTypes:["Boutique", "CMA Client"],products:"Destination Dog Treats",state:"Arizona",revenue:161.28},
+  {name:"Smoky Mountain Sasquatch",clientName:"Smoky Mountain Sasquatch",address:"7138 E Lamar Alexander Pkwy, Townsend, TN 37882, USA",lat:35.678255799999995,lon:-83.782127,type:"Gift Shop",allTypes:["Gift Shop"],products:"Thematic Dog Treats",state:"Tennessee",revenue:330.15},
+  {name:"Ruby Jane Boutique - Denver Highlands",clientName:"Ruby Jane Boutique - Denver Highlands",address:"3616 W 32nd Ave, Denver, CO 80211, USA",lat:39.7619518,lon:-105.035084,type:"Boutique",allTypes:["Boutique", "CMA Client"],products:"Destination Dog Treats",state:"Colorado",revenue:252.72},
   {name:"Apple Valley Mountain Village & Cafe",clientName:"Apple Valley Mountain Village",address:"7138 E Lamar Alexander Pkwy, Townsend, TN 37882, USA",lat:35.6787561,lon:-83.7823536,type:"General Retail",allTypes:["General Retail"],products:"Destination Dog Treats",state:"Tennessee",revenue:330.15},
   {name:"Bougie Beach Co.",clientName:"Bougie Beach Collective",address:"111 Los Altos St, Oxnard, CA 93035, USA",lat:34.1723412,lon:-119.23333190000001,type:"Boutique",allTypes:["Boutique", "CMA Client"],products:"Destination Dog Treats",state:"California",revenue:161.28},
   {name:"Crew LaLa",clientName:"Crew LaLa",address:"1309 Ashley River Rd, Charleston, SC 29407, USA",lat:32.7970128,lon:-79.99870589999999,type:"Pet Retail",allTypes:["Pet Retail"],products:"Destination Dog Treats",state:"South Carolina",revenue:144},
   {name:"Molson Coors",clientName:"Molson Coors",address:"311 10th St, Golden, CO 80401, USA",lat:39.757398699999996,lon:-105.2190198,type:"Brewery",allTypes:["Brewery"],products:"Custom Dog Treats",state:"Colorado",revenue:1923.38},
   {name:"Pink Sheep Interiors",clientName:"Pink Sheep Interiors",address:"2876 Howard Ave, Myrtle Beach, SC 29577, USA",lat:33.666725299999996,lon:-78.9387462,type:"Boutique",allTypes:["Boutique"],products:"Destination Dog Treats, Bulk Dog Treats",state:"South Carolina",revenue:190},
-  {name:"Santa Barbara Company",clientName:"",address:"214 E Victoria St, Santa Barbara, CA 93101, USA",lat:34.4267579,lon:-119.70291160000001,type:"Boutique",allTypes:["Boutique"],products:"Destination Dog Treats",state:"California",revenue:144},
-  {name:"Petaluma Home & Garden",clientName:"",address:"516 Petaluma Blvd S, Petaluma, CA 94952, USA",lat:38.230530099999996,lon:-122.63234770000001,type:"Flower / Garden Shop",allTypes:["Flower / Garden Shop", "CMA Client"],products:"Destination Dog Treats",state:"California",revenue:161.28},
-  {name:"Kelseyville Lumber & Supply Co",clientName:"",address:"3555 N Main St, Kelseyville, CA 95451, USA",lat:38.98115,lon:-122.84687799999999,type:"Hardware",allTypes:["Hardware", "CMA Client"],products:"Destination Dog Treats",state:"California",revenue:161.28},
-  {name:"Legends Gifts",clientName:"",address:"424 Broadway, Nashville, TN 37203, USA",lat:36.1608383,lon:-86.77837799999999,type:"Gift Shop",allTypes:["Gift Shop"],products:"Destination Dog Treats, Destination Dog Treats",state:"Tennessee",revenue:648},
+  {name:"Santa Barbara Company",clientName:"The Santa Barbara Company",address:"214 E Victoria St, Santa Barbara, CA 93101, USA",lat:34.4267579,lon:-119.70291160000001,type:"Boutique",allTypes:["Boutique"],products:"Destination Dog Treats",state:"California",revenue:144},
+  {name:"Petaluma Home & Garden",clientName:"Petaluma Home & Garden",address:"516 Petaluma Blvd S, Petaluma, CA 94952, USA",lat:38.230530099999996,lon:-122.63234770000001,type:"Flower / Garden Shop",allTypes:["Flower / Garden Shop", "CMA Client"],products:"Destination Dog Treats",state:"California",revenue:161.28},
+  {name:"Kelseyville Lumber & Supply Co",clientName:"Kelseyville Lumber",address:"3555 N Main St, Kelseyville, CA 95451, USA",lat:38.98115,lon:-122.84687799999999,type:"Hardware",allTypes:["Hardware", "CMA Client"],products:"Destination Dog Treats",state:"California",revenue:161.28},
+  {name:"Legends Gifts",clientName:"Legends Gifts",address:"424 Broadway, Nashville, TN 37203, USA",lat:36.1608383,lon:-86.77837799999999,type:"Gift Shop",allTypes:["Gift Shop"],products:"Destination Dog Treats, Destination Dog Treats",state:"Tennessee",revenue:648},
   {name:"Diggidy Dog",clientName:"Diggidy Dog",address:"N.E Corner of Ocean Ave and, Monte Verde St, Carmel-By-The-Sea, CA 93921, USA",lat:36.5552376,lon:-121.9242865,type:"Pet Retail",allTypes:["Pet Retail"],products:"Destination Dog Treats, Bulk Dog Treats",state:"California",revenue:452},
   {name:"Shangri-La Toronto",clientName:"Shangri-La Toronto",address:"188 University Ave, Toronto, ON M5H 0A3, Canada",lat:43.6491695,lon:-79.3861143,type:"Hotel",allTypes:["Hotel"],products:"Custom Dog Treats, Custom Dog Treats",state:"Ontario",revenue:2247.9},
   {name:"Anthem Ace Hardware",clientName:"Anthem Ace Hardware",address:"3440 W Anthem Way, Anthem, AZ 85086, USA",lat:33.866127299999995,lon:-112.1338464,type:"Hardware",allTypes:["Hardware", "CMA Client"],products:"Destination Dog Treats",state:"Arizona",revenue:288},
@@ -562,95 +562,99 @@ const markers = [
   {name:"Tipsy Gypsy Boutique",clientName:"Tipsy Gypsy Tahoe",address:"475 N Lake Blvd, Tahoe City, CA 96145, USA",lat:39.170830800000005,lon:-120.1418085,type:"Gift Shop",allTypes:["Gift Shop"],products:"Destination Dog Treats",state:"California",revenue:144}
 ];
 
-const typeConfig = {"Hotel": {"color": "#3498DB", "emoji": "\ud83c\udfe8"}, "Restaurant / Bar / Cafe / Bakery": {"color": "#E74C3C", "emoji": "\ud83c\udf7d\ufe0f"}, "Gift Shop": {"color": "#9B59B6", "emoji": "\ud83c\udf81"}, "CMA Client": {"color": "#F39C12", "emoji": "\ud83d\udce6"}, "Pet Retail": {"color": "#1ABC9C", "emoji": "\ud83d\udc3e"}, "Brewery": {"color": "#D35400", "emoji": "\ud83c\udf7a"}, "Winery": {"color": "#8E44AD", "emoji": "\ud83c\udf77"}, "Faire Client": {"color": "#00BCD4", "emoji": "\ud83d\udecd\ufe0f"}, "Boutique": {"color": "#E91E63", "emoji": "\ud83d\udc5c"}, "General Retail": {"color": "#2ECC71", "emoji": "\ud83c\udfea"}, "Hardware": {"color": "#607D8B", "emoji": "\ud83d\udd27"}, "Campground": {"color": "#388E3C", "emoji": "\u26fa"}, "Flower / Garden Shop": {"color": "#66BB6A", "emoji": "\ud83c\udf38"}, "Distillery": {"color": "#795548", "emoji": "\ud83e\udd43"}, "Farm": {"color": "#4CAF50", "emoji": "\ud83c\udf3e"}, "Museum": {"color": "#FF9800", "emoji": "\ud83c\udfdb\ufe0f"}, "Clothing Store": {"color": "#E91E63", "emoji": "\ud83d\udc55"}, "Airport Gift Shop": {"color": "#5C6BC0", "emoji": "\u2708\ufe0f"}, "Grocery Store": {"color": "#43A047", "emoji": "\ud83d\uded2"}, "Pharmacy": {"color": "#F44336", "emoji": "\ud83d\udc8a"}, "Antique Store": {"color": "#8D6E63", "emoji": "\ud83c\udffa"}, "Quotient Client": {"color": "#FF5722", "emoji": "\ud83d\udcca"}, "Sporting Goods Store": {"color": "#607D8B", "emoji": "\ud83c\udfc0"}, "Furniture Store": {"color": "#795548", "emoji": "\ud83e\ude91"}, "Shopify Client": {"color": "#96BF48", "emoji": "\ud83d\udecd\ufe0f"}};
-const defaultConfig = {"color": "#999", "emoji": "\ud83d\udccd"};
+const typeColors = {"General Retail": "#2ECC71", "Restaurant / Bar / Cafe / Bakery": "#E74C3C", "Hotel": "#3498DB", "Distillery": "#795548", "Hardware": "#607D8B", "Brewery": "#D35400", "Boutique": "#E91E63", "Winery": "#8E44AD", "Gift Shop": "#9B59B6", "Pet Retail": "#1ABC9C", "Faire Client": "#00BCD4", "Farm": "#4CAF50", "CMA Client": "#F39C12", "Museum": "#FF9800", "Pharmacy": "#F44336", "Campground": "#388E3C", "Clothing Store": "#E91E63", "Airport Gift Shop": "#5C6BC0", "Antique Store": "#8D6E63", "Grocery Store": "#43A047", "Flower / Garden Shop": "#66BB6A"};
+const typeEmojis = {"General Retail": "\ud83c\udfea", "Restaurant / Bar / Cafe / Bakery": "\ud83c\udf7d\ufe0f", "Hotel": "\ud83c\udfe8", "Distillery": "\ud83e\udd43", "Hardware": "\ud83d\udd27", "Brewery": "\ud83c\udf7a", "Boutique": "\ud83d\udc5c", "Winery": "\ud83c\udf77", "Gift Shop": "\ud83c\udf81", "Pet Retail": "\ud83d\udc3e", "Faire Client": "\ud83d\udecd\ufe0f", "Farm": "\ud83c\udf3e", "CMA Client": "\ud83d\udce6", "Museum": "\ud83c\udfdb\ufe0f", "Pharmacy": "\ud83d\udc8a", "Campground": "\u26fa", "Clothing Store": "\ud83d\udc55", "Airport Gift Shop": "\u2708\ufe0f", "Antique Store": "\ud83c\udffa", "Grocery Store": "\ud83d\uded2", "Flower / Garden Shop": "\ud83c\udf38"};
 
 const map = L.map('map', {zoomControl: true}).setView([39.5, -98.35], 4);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png', {
-  attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-  maxZoom: 19
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: 'abcd', maxZoom: 19
 }).addTo(map);
-map.getContainer().style.marginTop = '60px';
-map.invalidateSize();
 
 const clusterGroup = L.markerClusterGroup({
-  maxClusterRadius: 40,
-  spiderfyOnMaxZoom: true,
-  showCoverageOnHover: false,
-  zoomToBoundsOnClick: true,
+  maxClusterRadius: 50, spiderfyOnMaxZoom: true, showCoverageOnHover: false,
   iconCreateFunction: function(cluster) {
     const count = cluster.getChildCount();
-    let size = 'small';
-    if (count > 50) size = 'large';
-    else if (count > 10) size = 'medium';
+    let size = count < 10 ? 'small' : count < 50 ? 'medium' : 'large';
+    let dim = count < 10 ? 36 : count < 50 ? 44 : 52;
     return L.divIcon({
-      html: '<div style="background:#E67E22;color:white;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:13px;border:2px solid white;box-shadow:0 2px 6px rgba(0,0,0,0.3);">' + count + '</div>',
-      className: 'marker-cluster marker-cluster-' + size,
-      iconSize: L.point(40, 40)
+      html: '<div style="background:#E67E22;color:white;border-radius:50%;width:'+dim+'px;height:'+dim+'px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:3px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.3)">'+count+'</div>',
+      className: '', iconSize: [dim, dim]
     });
   }
 });
 
-let hiddenTypes = new Set();
+const disabledTypes = new Set();
 const allMarkerLayers = [];
 
-markers.forEach(m => {
-  const cfg = typeConfig[m.type] || defaultConfig;
-  const icon = L.divIcon({
-    html: '<div class="custom-marker" style="background:' + cfg.color + '">' + cfg.emoji + '</div>',
-    className: '',
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
-    popupAnchor: [0, -14]
+function createMarkerIcon(type) {
+  const color = typeColors[type] || '#999';
+  const emoji = typeEmojis[type] || '\ud83d\udccd';
+  return L.divIcon({
+    html: '<div class="custom-marker" style="background:'+color+'">'+emoji+'</div>',
+    className: '', iconSize: [28, 28], iconAnchor: [14, 14], popupAnchor: [0, -14]
   });
-  const marker = L.marker([m.lat, m.lon], {icon});
-  const rev = m.revenue ? '$' + m.revenue.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2}) : 'N/A';
-  const typeBadges = m.allTypes.map(t => {
-    const c = typeConfig[t] || defaultConfig;
-    return '<span class="type-badge" style="background:' + c.color + '">' + (c.emoji || '') + ' ' + t + '</span>';
-  }).join(' ');
-  marker.bindPopup('<div class="popup-content">' +
+}
+
+function formatRevenue(r) {
+  if (r >= 1000) return '$' + (r/1000).toFixed(1) + 'k';
+  return '$' + r.toFixed(0);
+}
+
+function dedupProducts(p) {
+  const seen = new Set();
+  return p.split(', ').filter(x => { if (seen.has(x)) return false; seen.add(x); return true; }).join(', ');
+}
+
+markers.forEach(m => {
+  const icon = createMarkerIcon(m.type);
+  const layer = L.marker([m.lat, m.lon], {icon});
+  const color = typeColors[m.type] || '#999';
+  layer.bindPopup(
+    '<div class="popup-content">' +
     '<h3>' + m.name + '</h3>' +
-    (m.clientName !== m.name ? '<div class="client-name">Client: ' + m.clientName + '</div>' : '') +
-    '<div class="detail">📍 ' + m.address + '</div>' +
-    '<div class="detail">💰 Lifetime Revenue: ' + rev + '</div>' +
-    '<div class="detail">📦 ' + (m.state || '') + '</div>' +
-    '<div class="products">Products: ' + m.products + '</div>' +
-    '<div>' + typeBadges + '</div></div>',
-    {maxWidth: 350});
-  marker._data = m;
-  allMarkerLayers.push(marker);
-  clusterGroup.addLayer(marker);
+    (m.clientName !== m.name ? '<div class="client-name">' + m.clientName + '</div>' : '') +
+    '<div class="detail">\ud83d\udccd ' + m.address + '</div>' +
+    '<div class="detail">\ud83d\udcca Revenue: ' + formatRevenue(m.revenue) + '</div>' +
+    '<div class="products">\ud83c\udff7\ufe0f ' + dedupProducts(m.products) + '</div>' +
+    '<span class="type-badge" style="background:' + color + '">' + m.type + '</span>' +
+    '</div>', {maxWidth: 320}
+  );
+  layer._data = m;
+  allMarkerLayers.push(layer);
 });
 
-map.addLayer(clusterGroup);
-
-function filterMarkers() {
+function refreshMap() {
   const stateVal = document.getElementById('stateFilter').value;
   const typeVal = document.getElementById('typeFilter').value;
   const searchVal = document.getElementById('searchInput').value.toLowerCase();
   clusterGroup.clearLayers();
-  allMarkerLayers.forEach(marker => {
-    const d = marker._data;
-    if (hiddenTypes.has(d.type)) return;
-    if (stateVal !== 'all' && d.state !== stateVal) return;
-    if (typeVal !== 'all' && d.type !== typeVal && !(d.allTypes && d.allTypes.includes(typeVal))) return;
-    if (searchVal && !d.name.toLowerCase().includes(searchVal) && !d.clientName.toLowerCase().includes(searchVal) && !d.address.toLowerCase().includes(searchVal)) return;
-    clusterGroup.addLayer(marker);
+  allMarkerLayers.forEach(layer => {
+    const m = layer._data;
+    if (disabledTypes.has(m.type)) return;
+    if (stateVal !== 'all' && m.state !== stateVal) return;
+    if (typeVal !== 'all' && m.type !== typeVal) return;
+    if (searchVal && !m.name.toLowerCase().includes(searchVal) && !m.clientName.toLowerCase().includes(searchVal) && !m.address.toLowerCase().includes(searchVal)) return;
+    clusterGroup.addLayer(layer);
   });
 }
 
-document.getElementById('stateFilter').addEventListener('change', filterMarkers);
-document.getElementById('typeFilter').addEventListener('change', filterMarkers);
-document.getElementById('searchInput').addEventListener('input', filterMarkers);
+refreshMap();
+map.addLayer(clusterGroup);
+
+document.getElementById('stateFilter').addEventListener('change', refreshMap);
+document.getElementById('typeFilter').addEventListener('change', refreshMap);
+document.getElementById('searchInput').addEventListener('input', refreshMap);
 
 document.querySelectorAll('.legend-item').forEach(item => {
   item.addEventListener('click', () => {
     const type = item.dataset.type;
-    item.classList.toggle('disabled');
-    if (hiddenTypes.has(type)) hiddenTypes.delete(type);
-    else hiddenTypes.add(type);
-    filterMarkers();
+    if (disabledTypes.has(type)) { disabledTypes.delete(type); item.classList.remove('disabled'); }
+    else { disabledTypes.add(type); item.classList.add('disabled'); }
+    refreshMap();
   });
 });
+
+setTimeout(() => { map.invalidateSize(); }, 100);
 </script>
+</body>
+</html>
