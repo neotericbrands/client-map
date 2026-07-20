@@ -61,7 +61,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-
 <body>
 <div class="header">
   <h1>&#128021; Neoteric Brands Client Map</h1>
-  <div class="stats"><strong>520</strong> locations &bull; <strong>46</strong> states/regions</div>
+  <div class="stats"><strong>518</strong> locations &bull; <strong>46</strong> states/regions</div>
   <div class="controls">
     <select id="stateFilter">
       <option value="all">All States</option>
@@ -69,8 +69,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-
 <option value="Arizona">Arizona (17)</option>
 <option value="Arkansas">Arkansas (4)</option>
 <option value="Bahamas">Bahamas (1)</option>
-<option value="California">California (81)</option>
-<option value="Colorado">Colorado (71)</option>
+<option value="California">California (80)</option>
+<option value="Colorado">Colorado (70)</option>
 <option value="Connecticut">Connecticut (2)</option>
 <option value="Delaware">Delaware (3)</option>
 <option value="Florida">Florida (20)</option>
@@ -119,8 +119,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-
 <option value="Gift Shop">Gift Shop (75)</option>
 <option value="Pet Retail">Pet Retail (36)</option>
 <option value="Faire Client">Faire Client (21)</option>
-<option value="General Retail">General Retail (19)</option>
 <option value="Boutique">Boutique (18)</option>
+<option value="General Retail">General Retail (17)</option>
 <option value="Winery">Winery (14)</option>
 <option value="Brewery">Brewery (13)</option>
 <option value="Hardware">Hardware (8)</option>
@@ -149,8 +149,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-
   <div class="legend-item" data-type="Gift Shop"><span class="legend-dot" style="background:#9B59B6">🎁</span>Gift Shop (75)</div>
   <div class="legend-item" data-type="Pet Retail"><span class="legend-dot" style="background:#1ABC9C">🐾</span>Pet Retail (36)</div>
   <div class="legend-item" data-type="Faire Client"><span class="legend-dot" style="background:#00BCD4">🛍️</span>Faire Client (21)</div>
-  <div class="legend-item" data-type="General Retail"><span class="legend-dot" style="background:#2ECC71">🏪</span>General Retail (19)</div>
   <div class="legend-item" data-type="Boutique"><span class="legend-dot" style="background:#E91E63">👜</span>Boutique (18)</div>
+  <div class="legend-item" data-type="General Retail"><span class="legend-dot" style="background:#2ECC71">🏪</span>General Retail (17)</div>
   <div class="legend-item" data-type="Winery"><span class="legend-dot" style="background:#8E44AD">🍷</span>Winery (14)</div>
   <div class="legend-item" data-type="Brewery"><span class="legend-dot" style="background:#D35400">🍺</span>Brewery (13)</div>
   <div class="legend-item" data-type="Hardware"><span class="legend-dot" style="background:#607D8B">🔧</span>Hardware (8)</div>
@@ -466,8 +466,6 @@ const markers = [
   {"name":"The Westin Monache Resort, Mammoth","clientName":"Westin Monache","address":"50 Hillside Dr, Mammoth Lakes, CA 93546, USA","lat":37.649229399999996,"lon":-118.98631870000001,"type":"Hotel","allTypes":["Hotel"],"products":"Trail Mix","state":"California"},
   {"name":"Wild Palms Hotel - JDV by Hyatt","clientName":"Wild Palms Hotel","address":"910 E Fremont Ave, Sunnyvale, CA 94087, USA","lat":37.3515297,"lon":-122.0136454,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"California"},
   {"name":"The Westin South Coast Plaza, Costa Mesa","clientName":"Westin South Coast Plaza","address":"686 Anton Blvd, Costa Mesa, CA 92626, USA","lat":33.691106,"lon":-117.8841899,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"California"},
-  {"name":"Xanterra - Rocky Mountain Gift Store","clientName":"Xanterra","address":"Trail Ridge Store, Trail Ridge Rd, Rocky Mountain National Park, CO 80517","lat":40.44125,"lon":-105.75388,"type":"General Retail","allTypes":["General Retail"],"products":"Custom Dog Treats","state":"Colorado"},
-  {"name":"Xanterra - Oasis General Store","clientName":"Xanterra","address":"The Ranch at Death Valley, Furnace Creek, CA 92328","lat":36.45656,"lon":-116.86638,"type":"General Retail","allTypes":["General Retail"],"products":"Custom Dog Treats","state":"California"},
   {"name":"Woodlark Hotel","clientName":"Woodlark Hotel","address":"Portland, Oregon (approximate)","lat":45.52025,"lon":-122.67419,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Oregon"},
   {"name":"Hotel Zachary","clientName":"Hotel Zachary","address":"Hotel Zachary, 3630, North Clark Street, Wrigleyville, Lake View, Chicago, Lake View Township, Cook County, Illinois, 60613, United States","lat":41.94772,"lon":-87.6573,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Illinois"},
   {"name":"The Don CeSar","clientName":"The Don CeSar","address":"The Don CeSar, 3400, Gulf Boulevard, Saint Pete Beach, Pinellas County, Florida, 33706, United States","lat":27.70927,"lon":-82.73728,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Florida"},
@@ -609,8 +607,8 @@ const markers = [
   {"name":"Sun Outdoors Rocky Mountains","clientName":"Sun Outdoors Rocky Mountains","address":"1051 Summit Trl, Granby, CO 80446, USA","lat":40.101108599999996,"lon":-105.95127140000001,"type":"Campground","allTypes":["Campground"],"products":"Custom Dog Treats","state":"Colorado"},
   {"name":"Watson's Greenhouse and Nursery","clientName":"Watson's Greenhouse and Nursery","address":"Watson's Greenhouse and Nursery, 6211, Pioneer Way East, Puyallup, Pierce County, Washington, 98371, United States","lat":47.198,"lon":-122.34777,"type":"Flower / Garden Shop","allTypes":["Flower / Garden Shop"],"products":"Destination Dog Treats","state":"Washington"},
   {"name":"High Peaks Resort","clientName":"High Peaks Resort","address":"2384 Saranac Ave, Lake Placid, NY 12946, USA","lat":44.2913613,"lon":-73.9854395,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"New York"},
-  {"name":"Rocky Mountain Gift Store (Xanterra)","clientName":"Rocky Mountain Gift Store (Xanterra)","address":"Estes Park, Colorado (approximate)","lat":40.37719,"lon":-105.52322,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"Colorado"},
-  {"name":"Oasis General Store (Xanterra)","clientName":"Oasis General Store (Xanterra)","address":"Death Valley, California (approximate)","lat":36.42287,"lon":-116.91372,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"California"},
+  {"name":"Rocky Mountain Gift Store (Xanterra)","clientName":"Rocky Mountain Gift Store (Xanterra)","address":"Trail Ridge Store, Trail Ridge Rd, Rocky Mountain National Park, CO 80517","lat":40.44125,"lon":-105.75388,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"Colorado"},
+  {"name":"Oasis General Store (Xanterra)","clientName":"Oasis General Store (Xanterra)","address":"The Ranch at Death Valley, Furnace Creek, CA 92328","lat":36.45656,"lon":-116.86638,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"California"},
   {"name":"Grand Teton Lodge (Vail Resorts)","clientName":"Grand Teton Lodge (Vail Resorts)","address":"Grand Teton Lodge Company, 101 Jackson Lake Lodge Rd, Moran, WY 83013","lat":43.87738,"lon":-110.57747,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Custom Dog Treats","state":"Wyoming"},
   {"name":"Tom's Farms","clientName":"Tom's Farms","address":"23900 Temescal Canyon Rd, Temescal Valley, CA 92883, USA","lat":33.772918,"lon":-117.48673099999999,"type":"Flower / Garden Shop","allTypes":["Flower / Garden Shop"],"products":"Custom Dog Treats","state":"California"},
   {"name":"Happy Dog","clientName":"Happy Dog","address":"Happy Dog, 18962, Sonoma Highway, Verano, Boyes Hot Springs, Sonoma County, California, 95476, United States","lat":38.30375,"lon":-122.47729,"type":"Pet Retail","allTypes":["Pet Retail"],"products":"Destination Dog Treats","state":"California"},
