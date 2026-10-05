@@ -61,50 +61,51 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-
 <body>
 <div class="header">
   <h1>&#128021; Neoteric Brands Client Map</h1>
-  <div class="stats"><strong>541</strong> locations &bull; <strong>47</strong> states/regions</div>
+  <div class="stats"><strong>541</strong> locations &bull; <strong>48</strong> states/regions</div>
   <div class="controls">
     <select id="stateFilter">
       <option value="all">All States</option>
 <option value="Alabama">Alabama (1)</option>
 <option value="Arizona">Arizona (16)</option>
-<option value="Arkansas">Arkansas (4)</option>
+<option value="Arkansas">Arkansas (3)</option>
 <option value="Bahamas">Bahamas (1)</option>
-<option value="California">California (87)</option>
-<option value="Colorado">Colorado (78)</option>
-<option value="Connecticut">Connecticut (2)</option>
+<option value="California">California (88)</option>
+<option value="Colorado">Colorado (77)</option>
+<option value="Connecticut">Connecticut (1)</option>
 <option value="Delaware">Delaware (3)</option>
 <option value="Florida">Florida (21)</option>
 <option value="Georgia">Georgia (11)</option>
 <option value="Hawaii">Hawaii (4)</option>
 <option value="Idaho">Idaho (4)</option>
 <option value="Illinois">Illinois (7)</option>
+<option value="Indiana">Indiana (1)</option>
 <option value="Iowa">Iowa (1)</option>
 <option value="Kansas">Kansas (1)</option>
-<option value="Kentucky">Kentucky (4)</option>
+<option value="Kentucky">Kentucky (5)</option>
 <option value="Louisiana">Louisiana (1)</option>
 <option value="Maine">Maine (11)</option>
 <option value="Maryland">Maryland (4)</option>
-<option value="Massachusetts">Massachusetts (6)</option>
-<option value="Michigan">Michigan (4)</option>
+<option value="Massachusetts">Massachusetts (4)</option>
+<option value="Michigan">Michigan (5)</option>
 <option value="Minnesota">Minnesota (3)</option>
 <option value="Missouri">Missouri (1)</option>
 <option value="Montana">Montana (10)</option>
 <option value="Multiple">Multiple (4)</option>
 <option value="Nebraska">Nebraska (3)</option>
 <option value="Nevada">Nevada (3)</option>
-<option value="New Jersey">New Jersey (10)</option>
+<option value="New Jersey">New Jersey (11)</option>
 <option value="New Mexico">New Mexico (3)</option>
 <option value="New York">New York (23)</option>
 <option value="North Carolina">North Carolina (9)</option>
 <option value="Ohio">Ohio (3)</option>
-<option value="Oklahoma">Oklahoma (3)</option>
+<option value="Oklahoma">Oklahoma (2)</option>
 <option value="Ontario">Ontario (2)</option>
 <option value="Oregon">Oregon (12)</option>
 <option value="Pennsylvania">Pennsylvania (13)</option>
 <option value="Quebec">Quebec (1)</option>
 <option value="South Carolina">South Carolina (6)</option>
 <option value="South Dakota">South Dakota (3)</option>
-<option value="Tennessee">Tennessee (7)</option>
+<option value="Tennessee">Tennessee (8)</option>
 <option value="Texas">Texas (113)</option>
 <option value="Utah">Utah (9)</option>
 <option value="Virginia">Virginia (4)</option>
@@ -115,12 +116,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-
     </select>
     <select id="typeFilter">
       <option value="all">All Types</option>
-<option value="Hotel">Hotel (162)</option>
-<option value="Restaurant / Bar / Cafe / Bakery">Restaurant / Bar / Cafe / Bakery (95)</option>
+<option value="Hotel">Hotel (157)</option>
+<option value="Restaurant / Bar / Cafe / Bakery">Restaurant / Bar / Cafe / Bakery (94)</option>
 <option value="Gift Shop">Gift Shop (86)</option>
-<option value="Pet Business">Pet Business (54)</option>
+<option value="Pet Business">Pet Business (59)</option>
 <option value="Faire Client">Faire Client (26)</option>
-<option value="General Retail">General Retail (18)</option>
+<option value="General Retail">General Retail (19)</option>
 <option value="Boutique">Boutique (18)</option>
 <option value="Brewery">Brewery (17)</option>
 <option value="Winery">Winery (11)</option>
@@ -146,12 +147,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-
 </div>
 <div class="legend">
   <h3>Client Types</h3>
-  <div class="legend-item" data-type="Hotel"><span class="legend-dot" style="background:#3498DB">🏨</span>Hotel (162)</div>
-  <div class="legend-item" data-type="Restaurant / Bar / Cafe / Bakery"><span class="legend-dot" style="background:#E74C3C">🍽️</span>Restaurant / Bar / Cafe / Bakery (95)</div>
+  <div class="legend-item" data-type="Hotel"><span class="legend-dot" style="background:#3498DB">🏨</span>Hotel (157)</div>
+  <div class="legend-item" data-type="Restaurant / Bar / Cafe / Bakery"><span class="legend-dot" style="background:#E74C3C">🍽️</span>Restaurant / Bar / Cafe / Bakery (94)</div>
   <div class="legend-item" data-type="Gift Shop"><span class="legend-dot" style="background:#9B59B6">🎁</span>Gift Shop (86)</div>
-  <div class="legend-item" data-type="Pet Business"><span class="legend-dot" style="background:#9CCC65">📍</span>Pet Business (54)</div>
+  <div class="legend-item" data-type="Pet Business"><span class="legend-dot" style="background:#9CCC65">📍</span>Pet Business (59)</div>
   <div class="legend-item" data-type="Faire Client"><span class="legend-dot" style="background:#00BCD4">🛍️</span>Faire Client (26)</div>
-  <div class="legend-item" data-type="General Retail"><span class="legend-dot" style="background:#2ECC71">🏪</span>General Retail (18)</div>
+  <div class="legend-item" data-type="General Retail"><span class="legend-dot" style="background:#2ECC71">🏪</span>General Retail (19)</div>
   <div class="legend-item" data-type="Boutique"><span class="legend-dot" style="background:#E91E63">👜</span>Boutique (18)</div>
   <div class="legend-item" data-type="Brewery"><span class="legend-dot" style="background:#D35400">🍺</span>Brewery (17)</div>
   <div class="legend-item" data-type="Winery"><span class="legend-dot" style="background:#8E44AD">🍷</span>Winery (11)</div>
@@ -312,7 +313,6 @@ const markers = [
   {"name":"Longboard Cafe","clientName":"Longboard Cafe","address":"6701 Coastal Hwy, Ocean City, MD 21842, USA","lat":38.3895753,"lon":-75.066114,"type":"Restaurant / Bar / Cafe / Bakery","allTypes":["Restaurant / Bar / Cafe / Bakery"],"products":"Custom Dog Treats","state":"Maryland"},
   {"name":"Stellar Brew & Natural Cafe","clientName":"Stellar Brew","address":"3280 Main St, Mammoth Lakes, CA 93546, USA","lat":37.648250999999995,"lon":-118.9701257,"type":"Brewery","allTypes":["Brewery"],"products":"Custom Dog Treats","state":"California"},
   {"name":"Kimpton Cardinal Hotel","clientName":"Kimpton Cardinal","address":"51 4th St E, Winston-Salem, NC 27101, USA","lat":36.0988009,"lon":-80.2437053,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"North Carolina"},
-  {"name":"Aloft Boston Seaport District","clientName":"Aloft Boston Seaport","address":"401-403 D St, Boston, MA 02210, USA","lat":42.3434606,"lon":-71.0449174,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Massachusetts"},
   {"name":"Four Seasons Resort Oahu at Ko Olina","clientName":"Four Seasons Oahu","address":"92-1001 Olani St, Kapolei, HI 96707, USA","lat":21.3393547,"lon":-158.1257721,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Hawaii"},
   {"name":"Kimpton Hotel Monaco Pittsburgh","clientName":"Kimpton Monaco Pittsburgh","address":"620 William Penn Pl, Pittsburgh, PA 15219, USA","lat":40.4414152,"lon":-79.9963274,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Pennsylvania"},
   {"name":"Four Seasons Hotel Westlake Village, California","clientName":"Four Seasons Westlake Village","address":"2 Dole Dr, Westlake Village, CA 91362, USA","lat":34.1515768,"lon":-118.80458879999999,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"California"},
@@ -348,7 +348,7 @@ const markers = [
   {"name":"Legends Gifts","clientName":"Legends Gifts","address":"424 Broadway, Nashville, TN 37203, USA","lat":36.1608383,"lon":-86.77837799999999,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"Tennessee"},
   {"name":"3 Raw Hounds","clientName":"3 Raw Hounds","address":"Pacific, Missouri (approximate)","lat":38.48181,"lon":-90.74159,"type":"Pet Business","allTypes":["Pet Business"],"products":"Bulk Dog Treats, Custom Dog Treats, UPC","state":"Missouri"},
   {"name":"The Mutt Market","clientName":"The Mutt Market","address":"Martinsburg, West Virginia (approximate)","lat":39.45625,"lon":-77.96396,"type":"Pet Business","allTypes":["Pet Business"],"products":"Bulk Dog Treats, Destination Dog Treats","state":"West Virginia"},
-  {"name":"Lola's Cafe","clientName":"Lola's Cafe","address":"1101 Corporate Dr a1, Ladera Ranch, CA 92694, USA","lat":33.55579,"lon":-117.62927499999999,"type":"Restaurant / Bar / Cafe / Bakery","allTypes":["Restaurant / Bar / Cafe / Bakery"],"products":"Custom Dog Treats","state":"New York"},
+  {"name":"Kimmy-Chewz Pet Bakery","clientName":"Kimmy-Chewz Pet Bakery","address":"Kernersville, North Carolina (approximate)","lat":36.11986,"lon":-80.07365,"type":"Pet Business","allTypes":["Pet Business","Faire Client"],"products":"Bulk Dog Treats","state":"North Carolina"},
   {"name":"Domaine Madeleine Hotel","clientName":"Domaine Madeleine Hotel","address":"146 Wildflower Ln, Port Angeles, WA 98362, USA","lat":48.1153968,"lon":-123.2701249,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Washington"},
   {"name":"JW Marriott Essex House New York","clientName":"JW Marriott Essex House New York","address":"160 Central Park S, New York, NY 10019, USA","lat":40.7662802,"lon":-73.9785674,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats, Dog Water Bowl, Poop Bag Dispenser","state":"New York"},
   {"name":"Sheraton LaGuardia East Hotel","clientName":"Sheraton LaGuardia East","address":"135-20 39th Ave, Flushing, NY 11354, USA","lat":40.759726,"lon":-73.83167710000001,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"New York"},
@@ -357,10 +357,8 @@ const markers = [
   {"name":"Millie's Market","clientName":"Millie's Market","address":"324 Madaket Rd, Nantucket, MA 02554, USA","lat":41.2714436,"lon":-70.1997334,"type":"Restaurant / Bar / Cafe / Bakery","allTypes":["Restaurant / Bar / Cafe / Bakery"],"products":"Custom Dog Treats","state":"Massachusetts"},
   {"name":"Hotel Kabuki - JDV by Hyatt","clientName":"Hotel Kabuki","address":"1625 Post St, San Francisco, CA 94115, USA","lat":37.7855773,"lon":-122.42893889999999,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"California"},
   {"name":"Grand Hyatt Kauai Resort & Spa","clientName":"Grand Hyatt Kauai","address":"1571 Poipu Rd, Koloa, HI 96756, USA","lat":21.8763069,"lon":-159.439324,"type":"Hotel","allTypes":["Hotel"],"products":"Trail Mix","state":"Hawaii"},
-  {"name":"The Ritz-Carlton Key Biscayne, Miami","clientName":"Ritz Carlton Key Biscayne","address":"455 Grand Bay Drive, Key Biscayne, Miami, FL 33149, USA","lat":25.6915779,"lon":-80.1579217,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Florida"},
   {"name":"Renaissance Charlotte SouthPark Hotel","clientName":"Renaissance Charlotte SouthPark","address":"5501 Carnegie Blvd, Charlotte, NC 28209, USA","lat":35.1529378,"lon":-80.83702679999999,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"North Carolina"},
   {"name":"Autumn Sage Vineyards","clientName":"Autumn Sage Vineyards","address":"90 Elgin Rd, Elgin, AZ 85611, USA","lat":31.6591603,"lon":-110.5896013,"type":"Winery","allTypes":["Winery"],"products":"Custom Dog Treats","state":"Arizona"},
-  {"name":"Ambassador Hotel Oklahoma City, Autograph Collection","clientName":"Ambassador Hotel Oklahoma City, Autograph Collection","address":"1200 N Walker Ave, Oklahoma City, OK 73103, USA","lat":35.480145199999995,"lon":-97.52092499999999,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Oklahoma"},
   {"name":"Omni Interlocken Hotel","clientName":"Omni Interlocken","address":"500 Interlocken Blvd, Broomfield, CO 80021, USA","lat":39.9275466,"lon":-105.11864759999999,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Colorado"},
   {"name":"Crust Kitchen & Bar","clientName":"Crust Kitchen & Bar","address":"86 Hangar Road West, Suite 101, Rome, NY 13440, USA","lat":43.2241686,"lon":-75.4206949,"type":"Restaurant / Bar / Cafe / Bakery","allTypes":["Restaurant / Bar / Cafe / Bakery"],"products":"Custom Dog Treats","state":"New York"},
   {"name":"Hyatt Regency Portland at the Oregon Convention Center","clientName":"Hyatt Regency Portland","address":"375 NE Holladay St, Portland, OR 97232, USA","lat":45.530407,"lon":-122.6628561,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Oregon"},
@@ -379,10 +377,8 @@ const markers = [
   {"name":"Aloft Portland Airport at Cascade Station","clientName":"Aloft Portland","address":"9920 NE Cascades Pkwy, Portland, OR 97220, USA","lat":45.5730387,"lon":-122.56040449999999,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Oregon"},
   {"name":"The Big Tool Box and Highlands Garden Center-Centennial, CO","clientName":"Big Tool Box","address":"8080 S Holly St, Centennial, CO 80122, USA","lat":39.5720047,"lon":-104.9221855,"type":"Hardware","allTypes":["Hardware"],"products":"Custom Dog Treats","state":"Colorado"},
   {"name":"Shangri-La Toronto","clientName":"Shangri-La Toronto","address":"188 University Ave, Toronto, ON M5H 0A3, Canada","lat":43.6491695,"lon":-79.3861143,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Ontario"},
-  {"name":"The White Hart","clientName":"The White Hart Inn","address":"15 Under Mountain Rd, Salisbury, CT 06068, USA","lat":41.9846444,"lon":-73.42217219999999,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Connecticut"},
   {"name":"Four Seasons Hotel Minneapolis","clientName":"Four Seasons Minneapolis","address":"245 Hennepin Ave, Minneapolis, MN 55401, USA","lat":44.981415,"lon":-93.26965469999999,"type":"Hotel","allTypes":["Hotel"],"products":"Dog Treats (Tins)","state":"Minnesota"},
   {"name":"Aloft Cleveland Airport","clientName":"Aloft Cleveland Airport Hotel","address":"5550 Great Northern Blvd, North Olmsted, OH 44070, USA","lat":41.4087925,"lon":-81.903032,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Ohio"},
-  {"name":"The Meteor Cafe","clientName":"The Meteor Cafe","address":"401 SE D St, Bentonville, AR 72712, USA","lat":36.36784,"lon":-94.20403639999999,"type":"Restaurant / Bar / Cafe / Bakery","allTypes":["Restaurant / Bar / Cafe / Bakery"],"products":"Custom Dog Treats","state":"Arkansas"},
   {"name":"Kimpton Hotel Monaco Denver","clientName":"Kimpton Monaco Denver","address":"1717 Champa St, Denver, CO 80202, USA","lat":39.7478609,"lon":-104.9926254,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Colorado"},
   {"name":"The Westin Dallas Downtown","clientName":"Westin Dallas Downtown","address":"1201 Main Street, Driveway Entrance at, 1220 Elm St, Dallas, TX 75202, USA","lat":32.7804192,"lon":-96.80180329999999,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Texas"},
   {"name":"The Westin Monache Resort, Mammoth","clientName":"Westin Mammoth","address":"50 Hillside Dr, Mammoth Lakes, CA 93546, USA","lat":37.649229399999996,"lon":-118.98631870000001,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats, Butter Toffee Mixed Nuts, Popcorn","state":"California"},
@@ -392,7 +388,6 @@ const markers = [
   {"name":"The Westin Chattanooga","clientName":"Westin Chattanooga","address":"801 Pine St, Chattanooga, TN 37402, USA","lat":35.0471743,"lon":-85.31315490000001,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats, Trail Mix","state":"Tennessee"},
   {"name":"The Westin Fort Lauderdale","clientName":"Westin Fort Lauderdale","address":"400 Corporate Dr, Fort Lauderdale, FL 33334, USA","lat":26.205101,"lon":-80.13929,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Florida"},
   {"name":"The Westin Galleria Dallas","clientName":"Westin Galleria Dallas","address":"13340 Dallas Pkwy, Dallas, TX 75240, USA","lat":32.9299746,"lon":-96.8201879,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Texas"},
-  {"name":"The Westin Copley Place, Boston","clientName":"Westin Copley Place","address":"10 Huntington Ave, Boston, MA 02116, USA","lat":42.3483206,"lon":-71.0774615,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Massachusetts"},
   {"name":"The Vanguard Ann Arbor, Autograph Collection","clientName":"The Vanguard Ann Arbor, Autograph Collection","address":"201 Glen Ave, Ann Arbor, MI 48104, USA","lat":42.282506000000005,"lon":-83.735867,"type":"Hotel","allTypes":["Hotel"],"products":"Reese's Pieces, Half-Popped Popcorn, Butter Toffee Mixed Nuts, Chocolate Chip Cookie Bites","state":"Michigan"},
   {"name":"Terramor Outdoor Resort","clientName":"Terramor Outdoor Resort","address":"Terramor Outdoor Resort, 1453, State Highway 102, Town Hill, Bar Harbor, Hancock County, Maine, 04609, United States","lat":44.40563,"lon":-68.34015,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Maine"},
   {"name":"The CURRENT Hotel, Autograph Collection","clientName":"The CURRENT Hotel, Autograph Collection","address":"Tampa, Florida (approximate)","lat":27.94499,"lon":-82.45831,"type":"Hotel","allTypes":["Hotel"],"products":"Half-Popped Popcorn, Energy Squares","state":"Florida"},
@@ -443,8 +438,9 @@ const markers = [
   {"name":"Red Barn Kennels","clientName":"Red Barn Kennels","address":"798 Hubbard Rd, Dawsonville, GA 30534, USA","lat":34.4465564,"lon":-84.24813259999999,"type":"Pet Business","allTypes":["Pet Business"],"products":"Custom Dog Treats, Bulk Dog Treats","state":"Georgia"},
   {"name":"Lazy Dog Beach Club","clientName":"Lazy Dog Beach Club","address":"Rehoboth Beach, Delaware (approximate)","lat":38.71648,"lon":-75.08351,"type":"Pet Business","allTypes":["Pet Business"],"products":"Destination Dog Treats","state":"Delaware"},
   {"name":"Tipsy Gypsy Boutique","clientName":"Tipsy Gypsy Tahoe","address":"475 N Lake Blvd, Tahoe City, CA 96145, USA","lat":39.170830800000005,"lon":-120.1418085,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"California"},
+  {"name":"Jacque Michelle","clientName":"Jacque Michelle","address":"Jacque Michelle, 2670, Broadway, Washington Village, Boulder, Boulder County, Colorado, 80304, United States","lat":40.02517,"lon":-105.28116,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"Colorado"},
   {"name":"Heyday","clientName":"Heyday","address":"Heyday, 7, West Main Street, Downtown, Bozeman, Gallatin County, Montana, 59715, United States","lat":45.67947,"lon":-111.03755,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"Montana"},
-  {"name":"Kimmy-Chewz Pet Bakery","clientName":"Kimmy-Chewz Pet Bakery","address":"Kernersville, North Carolina (approximate)","lat":36.11986,"lon":-80.07365,"type":"Pet Business","allTypes":["Pet Business","Faire Client"],"products":"Bulk Dog Treats","state":"North Carolina"},
+  {"name":"The Rustic Diamond","clientName":"The Rustic Diamond","address":"Morro Bay, California (approximate)","lat":35.36581,"lon":-120.8499,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"California"},
   {"name":"Portland Harbor Hotel","clientName":"Portland Harbor Hotel","address":"468 Fore St, Portland, ME 04101, USA","lat":43.655549699999995,"lon":-70.2551361,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Maine"},
   {"name":"Four Paws Bed & Bath","clientName":"Kraus Kennels / Four Paws Bed and Bath","address":"370 W 200 S, Rupert, ID 83350, USA","lat":42.591546099999995,"lon":-113.7387262,"type":"Pet Business","allTypes":["Pet Business"],"products":"Tote Bag","state":"Idaho"},
   {"name":"Avila Lighthouse Suites","clientName":"Avila Lighthouse Suites","address":"550 Front St, Avila Beach, CA 93424, USA","lat":35.1800017,"lon":-120.73554879999999,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"California"},
@@ -456,7 +452,6 @@ const markers = [
   {"name":"Baltimore Marriott Inner Harbor at Camden Yards","clientName":"Baltimore Marriott Inner Harbor","address":"110 S Eutaw St, Baltimore, MD 21201, USA","lat":39.2870103,"lon":-76.6210904,"type":"Hotel","allTypes":["Hotel"],"products":"Half-Popped Popcorn, Trail Mix","state":"Maryland"},
   {"name":"Hotel Greystone","clientName":"Hotel Greystone","address":"1920 Collins Ave, Miami Beach, FL 33139, USA","lat":25.7955163,"lon":-80.129313,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Florida"},
   {"name":"Fairmont Kea Lani, Maui","clientName":"Fairmont Kea Lani Maui","address":"4100 Wailea Alanui Dr, Wailea-Makena, HI 96753, USA","lat":20.6755864,"lon":-156.4415181,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats, Poop Bag Dispenser, Dog Bandana, Tote Bag","state":"Hawaii"},
-  {"name":"DC Oakes Brewhouse And Eatery","clientName":"DC Oakes Brewhouse & Eatery","address":"3581 E Harmony Rd #110, Fort Collins, CO 80528, USA","lat":40.522698999999996,"lon":-105.01173039999999,"type":"Restaurant / Bar / Cafe / Bakery","allTypes":["Restaurant / Bar / Cafe / Bakery"],"products":"Custom Dog Treats","state":"Colorado"},
   {"name":"Sunday River Resort","clientName":"Sunday River Skiway","address":"15 S Ridge Rd, Newry, ME 04261, USA","lat":44.4684091,"lon":-70.8774107,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Maine"},
   {"name":"Grand Hyatt Vail Resort and Spa","clientName":"Grand Hyatt Vail","address":"1300 Westhaven Dr, Vail, CO 81657, USA","lat":39.6368394,"lon":-106.40276999999999,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"Colorado"},
   {"name":"The Anaheim Hotel","clientName":"The Anaheim Hotel","address":"1700 S Harbor Blvd, Anaheim, CA 92802, USA","lat":33.806212099999996,"lon":-117.91475530000001,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"California"},
@@ -672,9 +667,7 @@ const markers = [
   {"name":"Purrs n Barks Pet Market & Bakery","clientName":"Purrs n Barks Pet Market & Bakery","address":"Houston, Texas (approximate)","lat":29.75894,"lon":-95.3677,"type":"Pet Business","allTypes":["Pet Business"],"products":"Destination Dog Treats","state":"Texas"},
   {"name":"Choice City Critter Care","clientName":"Choice City Critter Care","address":"Fort Collins, Colorado (approximate)","lat":40.58718,"lon":-105.07701,"type":"Pet Business","allTypes":["Pet Business"],"products":"Custom Dog Treats","state":"Colorado"},
   {"name":"Shy Bear Brewing","clientName":"Shy Bear Brewing","address":"Lewistown, Pennsylvania (approximate)","lat":40.59924,"lon":-77.57138,"type":"Brewery","allTypes":["Brewery"],"products":"Custom Dog Treats","state":"Pennsylvania"},
-  {"name":"Jacque Michelle","clientName":"Jacque Michelle","address":"Jacque Michelle, 2670, Broadway, Washington Village, Boulder, Boulder County, Colorado, 80304, United States","lat":40.02517,"lon":-105.28116,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"Colorado"},
   {"name":"Lionshead General Store","clientName":"Lionshead General Store","address":"Lionshead General Store, 610, West Lionshead Circle, West Vail, Vail, Eagle County, Colorado, 81657, United States","lat":39.64406,"lon":-106.38952,"type":"General Retail","allTypes":["General Retail"],"products":"Destination Dog Treats","state":"Colorado"},
-  {"name":"The Rustic Diamond","clientName":"The Rustic Diamond","address":"Morro Bay, California (approximate)","lat":35.36581,"lon":-120.8499,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"California"},
   {"name":"Country Ace Hardware","clientName":"Country Ace Hardware","address":"Coop Country Store, 205, West Eighth Street, Palisade, Mesa County, Colorado, 81526, United States","lat":39.10559,"lon":-108.35168,"type":"Hardware","allTypes":["Hardware"],"products":"Destination Dog Treats","state":"Colorado"},
   {"name":"Just Fabulous Galleries","clientName":"Just Fabulous Galleries","address":"Palm Springs, California (approximate)","lat":33.82463,"lon":-116.5403,"type":"Gift Shop","allTypes":["Gift Shop"],"products":"Destination Dog Treats","state":"California"},
   {"name":"Kimpton Everly Hotel","clientName":"Kimpton Everly Hotel","address":"The Kimpton Everly Hotel - Hollywood, 1800, Argyle Avenue, Hollywood, Los Angeles, Los Angeles County, California, 90028, United States","lat":34.10397,"lon":-118.32485,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats","state":"California"},
@@ -713,11 +706,19 @@ const markers = [
   {"name":"Dirty Fizz Cafe","clientName":"Dirty Fizz Cafe","address":"Rome, New York (approximate)","lat":43.21022,"lon":-75.4584,"type":"Restaurant / Bar / Cafe / Bakery","allTypes":["Restaurant / Bar / Cafe / Bakery"],"products":"Custom Dog Treats","state":"New York"},
   {"name":"The Crispy Biscuit Pet Deli","clientName":"The Crispy Biscuit Pet Deli","address":"Scottsbluff, Nebraska (approximate)","lat":41.8623,"lon":-103.66271,"type":"Pet Business","allTypes":["Pet Business"],"products":"Custom Dog Treats","state":"Nebraska"},
   {"name":"Spoke and Vine Motel","clientName":"Spoke and Vine Motel","address":"Spoke and Vine Motel, 424, Iowa Avenue, Palisade, Mesa County, Colorado, 81526, United States","lat":39.10658,"lon":-108.35619,"type":"Hotel","allTypes":["Hotel"],"products":"Destination Dog Treats","state":"Colorado"},
+  {"name":"The Pet Nook LLC","clientName":"The Pet Nook LLC","address":"Hodgenville, Kentucky (approximate)","lat":37.57375,"lon":-85.74035,"type":"Pet Business","allTypes":["Pet Business"],"products":"Custom Dog Treats, UPC","state":"Kentucky"},
   {"name":"Kimpton Pittman Hotel","clientName":"Kimpton Pittman Hotel","address":"The Pittman, 2551, Elm Street, Deep Ellum PID, Dallas, Dallas County, Texas, 75226, United States","lat":32.78453,"lon":-96.7873,"type":"Hotel","allTypes":["Hotel"],"products":"Custom Dog Treats, Dog Bandana","state":"Texas"},
   {"name":"Decker's Dog + Cat","clientName":"Decker's Dog + Cat","address":"La Jolla, California (approximate)","lat":32.84585,"lon":-117.25757,"type":"Pet Business","allTypes":["Pet Business"],"products":"Destination Dog Treats","state":"California"},
   {"name":"The Store at the Garland Hotel","clientName":"The Store at the Garland Hotel","address":"North Hollywood, California (approximate)","lat":34.16495,"lon":-118.37475,"type":"Gift Shop","allTypes":["Gift Shop","Faire Client"],"products":"Destination Dog Treats","state":"California"},
+  {"name":"Missy Plauman","clientName":"Missy Plauman","address":"Frederic, Michigan (approximate)","lat":44.77863,"lon":-84.75448,"type":"Pet Business","allTypes":["Pet Business"],"products":"Custom Dog Treats","state":"Michigan"},
+  {"name":"Mad Mike's","clientName":"Mad Mike's","address":"Warner Springs, California (approximate)","lat":33.28226,"lon":-116.63363,"type":"General Retail","allTypes":["General Retail"],"products":"Custom Dog Treats, UPC","state":"California"},
+  {"name":"Dolce Bagel","clientName":"Dolce Bagel","address":"Dolce Bagel & Cafe, 830, West Bay Avenue, Bay Ridge Estates, Barnegat Township, Ocean County, New Jersey, 08005, United States","lat":39.75671,"lon":-74.23593,"type":"Restaurant / Bar / Cafe / Bakery","allTypes":["Restaurant / Bar / Cafe / Bakery"],"products":"Custom Dog Treats","state":"New Jersey"},
+  {"name":"Rudeboy's Remedy","clientName":"Rudeboy's Remedy","address":"Atlantis, Florida (approximate)","lat":26.5909,"lon":-80.10088,"type":"Pet Business","allTypes":["Pet Business"],"products":"Custom Dog Treats","state":"Florida"},
   {"name":"Leo's Pet Store","clientName":"Leo's Pet Store","address":"Pagosa Springs, Colorado (approximate)","lat":37.26957,"lon":-107.01082,"type":"Faire Client","allTypes":["Faire Client","Pet Business"],"products":"Bulk Dog Treats","state":"Colorado"},
-  {"name":"Camp Lucy","clientName":"Camp Lucy","address":"Camp Lucy, 3509, Dripping Springs, Hays County, Texas, 78620, United States","lat":30.18096,"lon":-98.14702,"type":"Faire Client","allTypes":["Faire Client","Hotel"],"products":"Destination Dog Treats","state":"Texas"}
+  {"name":"Camp Lucy","clientName":"Camp Lucy","address":"Camp Lucy, 3509, Dripping Springs, Hays County, Texas, 78620, United States","lat":30.18096,"lon":-98.14702,"type":"Faire Client","allTypes":["Faire Client","Hotel"],"products":"Destination Dog Treats","state":"Texas"},
+  {"name":"FPM Kennels","clientName":"FPM Kennels","address":"Milan, Tennessee (approximate)","lat":35.91982,"lon":-88.75902,"type":"Pet Business","allTypes":["Pet Business"],"products":"Custom Dog Treats, UPC","state":"Tennessee"},
+  {"name":"Rosie's Cafe & Parlor","clientName":"Rosie's Cafe & Parlor","address":"Ithaca, New York (approximate)","lat":42.43742,"lon":-76.54837,"type":"Restaurant / Bar / Cafe / Bakery","allTypes":["Restaurant / Bar / Cafe / Bakery"],"products":"Custom Dog Treats","state":"New York"},
+  {"name":"Rex & Simba Inc","clientName":"Rex & Simba Inc","address":"Westfield, Indiana (approximate)","lat":40.04282,"lon":-86.12749,"type":"Pet Business","allTypes":["Pet Business"],"products":"Custom Dog Treats, UPC, Bulk Dog Treats","state":"Indiana"}
 ];
 const typeColors = {
   "Hotel": {color:"#3498DB",emoji:"🏨"},
